@@ -1,0 +1,48 @@
+body{
+    background-color: pink;
+}
+.container{
+    max-width: 80%;
+    margin: auto;
+    border: 1px solid red;
+    background-color: white;
+    padding: 30px;
+    overflow-y: auto;
+    margin-bottom: 
+
+}
+.massage{
+    margin:10px 5px;
+    border: 1px solid green;
+    width: 24%;
+    padding: 10px;
+    border-radius: 15px;
+}
+.left{
+    float: left;
+    clear: both;
+
+}
+.right{
+    float: right;
+    clear: both;
+}
+#send-container{
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 985px;
+    width: 100%;
+}
+#massagaInp{
+    width: 92%;
+    border: 2p solid black;
+    border-radius: 15px;
+    height: 34px;
+}
+.btn{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 30px;
+}

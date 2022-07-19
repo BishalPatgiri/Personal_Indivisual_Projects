@@ -1,0 +1,15 @@
+{
+  "name": "node_server",
+  "version": "1.0.0",
+  "description": "Node server for What App application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bishal",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.19",
+    "socket.io": "^4.5.1"
+  }
+}
