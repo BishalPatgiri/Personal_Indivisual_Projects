@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Page</title>
+    <style>
+        #vid{
+            width: 95%;
+            margin: auto;
+        }
+        iframe{
+            width: 100%;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="vid">
+    </div>
+</body>
+</html>
+<script>
+    let input=localStorage.getItem("video")
+    let frame=document.createElement("iframe")
+    frame.style.autoPlay="1"
+    frame.src=src=`https://www.youtube.com/embed/${input}`
+    document.getElementById("vid").append(frame)
+</script>

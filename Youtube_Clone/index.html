@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yutube app 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#btn>img{
+    width: 25px;
+    height: 100%;
+    cursor: pointer;
+}
+#second_first>img{
+    height: 31px;
+    width: 31px;
+}
+#second_first>h3{
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(25, 80, 234);
+    padding: 7px 12px;
+}
+.img_stl{
+    margin-right: 7px;
+}
+.left{
+    margin-left: 200px;
+}
+#btn{
+   padding: 8px 20px;
+   border: 1px solid rgb(182, 178, 178);
+   height: 40px;
+   border-left: 0px;
+}
+#content{
+    width: 100%;
+    /* border: 2px solid green; */
+    margin-top: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    row-gap: 28px;
+    background-color: rgba(239, 243, 242, 0.929);
+}
+
+#content>div{
+    /* border:1px solid red */
+    border-radius: 20px;
+}
+
+#content img{
+    width: 100%;
+}
+.logo{
+    height: 50px;
+    width: 100px;
+}
+#main{
+    display: flex;
+    /* border: 1px solid blue; */
+    justify-content: space-between;
+}
+#second{
+    /* border: 1px solid red; */
+    width: 100%;
+}
+#second_first{
+    /* border: 2px solid pink; */
+    width: 100%;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(185, 175, 175);
+}
+input{
+    height: 40px;
+    width: 500px;
+    padding-left: 20px;
+    border: 1px solid rgb(182, 178, 178);
+    outline-color: rgb(164, 161, 161);
+    margin-left: 250px;
+}
+.wid{
+    width: 20px;
+    padding: 15px 0px;
+    margin-right: 20px
+}
+.fa-microphone{
+    font-size:21px;
+    margin-top: 6px;
+    margin-bottom: 4px;
+    margin-left: 20px;
+    border-radius: 25px;
+    background-color: rgb(213, 220, 220);
+    padding: 10px 15px;
+}
+#end{
+    display: flex;
+    margin-left: 200px;
+}
+#end img{
+    height: 50px;
+    margin-top: 5px;
+}
+#first_first{
+    width: 15%;
+    display: flex;
+    padding-left: 30px;
+}
+#first_first>p{
+    font-size: 12px;
+    color: rgb(137, 132, 132);
+    margin-top: 5px;
+}
+
+#first_second>div{
+    display: flex;
+    /* margin-top: 18px; */
+    padding:10px 0px;
+    background-color: white;
+    transition: all 500ms linear;
+}
+
+#first_second>div:hover{
+   background-color: rgb(201, 195, 195);
+}
+#first_second>div img{
+    height: 30px;
+    margin-left: 27px;
+    margin-right: 20px;
+    opacity: 0.6;
+}
+.material-icons{
+    color: rgb(99, 96, 96);
+    font-size: 25px;
+    margin-left: 27px;
+    margin-right: 20px;
+}
+#first{
+    /* border: 1px solid blue; */
+    width: 17%;
+    height: 800px;
+    transition: all 800ms;
+}
+#first:hover{
+    overflow: auto;
+}
+#first::-webkit-scrollbar{
+    width: 6px;
+}
+#first::-webkit-scrollbar-track{
+    background-color:rgb(224, 217, 217);
+}
+#first::-webkit-scrollbar-thumb{
+    background-color: rgb(151, 146, 146);
+    border-radius: 40px;
+}
+#first_second{
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(175, 171, 171);
+    padding-bottom: 25px;
+}
+#children{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+#children>p{
+    border: 0px;
+    padding: 7px 12px;
+    border-radius: 18px;
+    background-color: rgb(236, 229, 229);
+    cursor: pointer;
+}
+#children>p:hover{
+    background-color: rgb(222, 216, 216);
+}
+/* .clogodiv{
+    display: flex;
+    width: 30px;
+}
+.clogo{
+    width: 20px;
+    height: 20px;
+    border: 2px solid red;
+} */
+
+    </style>
+</head>
+<body>
+    <div id="main">
+    <div id="first">
+        <div id="first_first">
+            <img class="wid" src="https://cdn-icons-png.flaticon.com/512/7588/7588955.png" alt="">
+            <img class="logo" src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Logo.png" alt="">
+            <p>IN</p>
+        </div>
+        <div id="first_second">
+            <div>
+                <span class="material-icons">home</span>
+                <p>Home</p>
+            </div>
+            <div>
+                <span class="material-icons">explore</span>
+                <p>Explore</p>
+            </div>
+            <div>
+               <img src="images/s.jpg" alt="" id="shorts">
+                <p>Shorts</p>
+            </div>
+            <div>
+                <span class="material-icons">subscriptions</span>
+                <p>Subscriptions</p>
+            </div>
+            <div>
+                <span class="material-icons">video_library</span>
+                <p>Library</p>
+            </div>
+            <div>
+                <span class="material-icons">history</span>
+                <p>History</p>
+            </div>
+            <div>
+                <span class="material-icons">slideshow</span>
+                <p>Your Videos</p>
+            </div>
+            <div>
+                <span class="material-icons">watch_later</span>
+                <p>Whatch Later</p>
+            </div>
+            <div>
+                <span class="material-icons">thumb_up</span>
+                <p>Liked Videos</p>
+            </div>
+            <div>
+                <span class="material-icons">expand_more</span>
+                <p>Show More</p>
+            </div>
+        </div>
+        <div id="first_third">
+            <p>SUBSCRIPTIONS</p>
+            <div>
+                <span class="material-icons">home</span>
+                <p>Home</p>
+            </div>
+            <div>
+                <span class="material-icons">home</span>
+                <p>Home</p>
+            </div>
+            <div>
+                <span class="material-icons">home</span>
+                <p>Home</p>
+            </div>
+            <div>
+                <span class="material-icons">home</span>
+                <p>Home</p>
+            </div>
+            <div>
+                <span class="material-icons">home</span>
+                <p>Home</p>
+            </div>
+            <div>
+                <span class="material-icons">home</span>
+                <p>Home</p>
+            </div>
+        </div>
+    </div>
+    <div id="second">
+        <div id="second_first">
+            <!-- <form action="" id="form"> -->
+                <input type="text" name="" id="check" placeholder="Search">
+                <button id="btn" onclick="result()"><img src="https://www.nicepng.com/png/full/65-659698_search-icon-without-background.png" alt=""></button>
+                <i class="fa fa-microphone" ></i>
+                <img class="img_stl left" src="https://cdn2.iconfinder.com/data/icons/device-video-camera-1/100/device-videocamera-remove-512.png" alt="">
+                <img class="img_stl" src="https://cdn3.iconfinder.com/data/icons/arrows-and-ui/100/naviagtion-menu_app-menu_app-drawer_app-list_list_mobile-apps-512.png" alt="">
+                <img class="img_stl" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-bell-outline-512.png" alt="">
+                <h3>B</h3>
+               
+        </div>
+        <div id="children">
+            <p>All</p>
+            <p>Mixes</p>
+            <p>Music</p>
+            <p>Live</p>
+            <p>T-Series</p>
+            <p>Sci-fi Filme</p>
+            <p>CSS</p>
+            <p>Bodybuliding</p>
+            <p>Comedy</p>
+            <p>Stockes</p>
+            <p>Python</p>
+            <p>Pop Music</p>
+            <p>Recently Uploaded</p>
+        </div>
+       
+        <div id="content">
+
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    const api="AIzaSyDn7F0c4kzz6eB3dWQx3fsWUNdkb3UQZIw";
+
+    let main_page=async()=>{
+        // let url= `https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&regionCode=IN&key=${api}`
+        let url=`https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=32&regionCode=IN&key=${api}`
+        let data=await fetch(url)
+        let data1=await data.json()
+        // console.log(data1.items)
+        display(data1.items);
+    }
+    main_page()
+
+    let result=async()=>{
+        event.preventDefault()
+        let name=document.querySelector("#check").value
+        console.log(name)
+        let url=  `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${name}&key=${api}`
+        let data=await fetch(url)
+        let data1=await data.json()
+        // console.log(data1.items)
+        display(data1.items);
+    }
+
+    let display=(data)=>{
+        document.getElementById("content").innerHTML=""
+        data.forEach(({id:{videoId},snippet:{title,thumbnails,channelId}})=> {
+            // channellogo(channelId)
+
+
+        let CLogo=[]
+        fetch(`https://youtube.googleapis.com/youtube/v3/channels?part=snippet&id=${channelId}&maxResults=10&key=AIzaSyCNz5Ft12lSSXgX8ms94ZlxGEgYRf_vhgE`).then(res=>res.json()).then(res=>CLogo.push(res.items[0].snippet.thumbnails.high.url))
+
+  
+        console.log(CLogo)
+
+
+
+
+//////////////////////
+            let div=document.createElement("div")
+            let div1=document.createElement("div")
+            div1.setAttribute("class","clogodiv")
+
+            let channelimage=document.createElement("img")
+            channelimage.setAttribute("class","clogo")
+            channelimage.src=CLogo
+            
+
+
+            let image=document.createElement("img")
+            image.src=thumbnails.default.url
+            image.cursor="Pointer"
+            image.addEventListener("click",function(){hel(videoId)})
+
+            let nam=document.createElement("h4")
+            nam.innerText=title
+
+            div.append(image,nam)
+            div1.append(channelimage,div)
+            document.getElementById("content").append(div1)
+        });
+    }
+    
+    function hel(videoId){
+       localStorage.setItem("video",videoId)
+       window.location.href="show.html"
+    }
+
+     async function channellogo(cid){
+
+        let channelURL=`https://youtube.googleapis.com/youtube/v3/channels?part=snippet&id=${cid}&maxResults=10&key=AIzaSyCNz5Ft12lSSXgX8ms94ZlxGEgYRf_vhgE`
+        let dam=await fetch(channelURL)
+        dam=await dam.json()
+        let bis=document.getElementsByClassName("clogo")
+        bis.src=dam.items[0].snippet.thumbnails.high.url
+        console.log(dam.items[0].snippet.thumbnails.high.url)
+       
+
+     }
+
+</script>
+
+
