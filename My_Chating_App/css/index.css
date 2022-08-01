@@ -8,10 +8,10 @@ body{
     background-color: white;
     padding: 30px;
     overflow-y: auto;
-    margin-bottom: 
+    margin-bottom: 10px;
 
 }
-.massage{
+.message{
     margin:10px 5px;
     border: 1px solid green;
     width: 24%;
