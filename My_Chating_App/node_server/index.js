@@ -1,6 +1,6 @@
 // Node server which will hnadle socket io connections
 
-const io=require("socket.io")(6000)
+const io=require("socket.io")(8000)
   
 const users={}
 
